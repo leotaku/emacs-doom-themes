@@ -1,4 +1,4 @@
-;;; doom-aurora-theme.el --- Theme inspired by doom-one and vim-aurora -*- lexical-binding: t; -*-
+;;; doom-aurora-theme.el --- Inspired by doom-one and vim-aurora -*- no-byte-compile: t; -*-
 
 ;;; Commentary:
 
