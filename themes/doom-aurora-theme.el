@@ -66,7 +66,6 @@
    (vc-deleted     red)
 
    ;; custom categories
-   (hidden     `(,(car bg) "black" "black"))
    (-modeline-pad nil)
 
    (modeline-fg     nil)
@@ -131,8 +130,8 @@
    ((markdown-code-face &override) :background (doom-lighten base3 0.05))
 
    ;; org-mode
-   (org-hide :foreground hidden)
-   (solaire-org-hide-face :foreground hidden))
+   (org-hide :foreground bg)
+   (solaire-org-hide-face :foreground bg))
 
   ;; --- extra variables ---------------------
   ())
