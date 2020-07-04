@@ -67,20 +67,15 @@
 
    ;; custom categories
    (hidden     `(,(car bg) "black" "black"))
-   (-modeline-bright nil)
    (-modeline-pad nil)
 
    (modeline-fg     nil)
    (modeline-fg-alt base5)
 
    (modeline-bg
-    (if -modeline-bright
-        (doom-darken blue 0.475)
-      `(,(doom-darken (car bg-alt) 0.15) ,@(cdr base0))))
+    `(,(doom-darken (car bg-alt) 0.15) ,@(cdr base0)))
    (modeline-bg-l
-    (if -modeline-bright
-        (doom-darken blue 0.45)
-      `(,(doom-darken (car bg-alt) 0.1) ,@(cdr base0))))
+    `(,(doom-darken (car bg-alt) 0.1) ,@(cdr base0)))
    (modeline-bg-inactive   `(,(doom-darken (car bg-alt) 0.1) ,@(cdr bg-alt)))
    (modeline-bg-inactive-l `(,(car bg-alt) ,@(cdr base1))))
 
@@ -105,7 +100,7 @@
     :background modeline-bg-inactive :foreground modeline-fg-alt
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
    (mode-line-emphasis
-    :foreground (if -modeline-bright base8 highlight))
+    :foreground highlight)
 
    (solaire-mode-line-face
     :inherit 'mode-line
@@ -117,7 +112,7 @@
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-l)))
 
    ;; Doom modeline
-   (doom-modeline-bar :background (if -modeline-bright modeline-bg highlight))
+   (doom-modeline-bar :background highlight)
    (doom-modeline-buffer-file :inherit 'mode-line-buffer-id :weight 'bold)
    (doom-modeline-buffer-path :inherit 'mode-line-emphasis :weight 'bold)
    (doom-modeline-buffer-project-root :foreground green :weight 'bold)
