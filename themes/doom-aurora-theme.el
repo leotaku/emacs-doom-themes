@@ -78,11 +78,7 @@
    (modeline-bg-inactive-l `(,(car bg-alt) ,@(cdr base1))))
 
   ;; --- extra faces ------------------------
-  ((elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
-
-   (evil-goggles-default-face :inherit 'region :background (doom-blend region bg 0.5))
-
-   ((line-number &override) :foreground base4)
+  (((line-number &override) :foreground base4)
    ((line-number-current-line &override) :foreground fg)
 
    (font-lock-comment-face
