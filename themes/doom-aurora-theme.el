@@ -66,8 +66,7 @@
    (vc-deleted     red)
 
    ;; custom categories
-   (-modeline-pad nil)
-
+   (modeline-pad   nil)
    (modeline-fg     nil)
    (modeline-fg-alt base5)
 
@@ -94,21 +93,21 @@
 
    (mode-line
     :background modeline-bg :foreground modeline-fg
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg)))
+    :box (if modeline-pad `(:line-width ,modeline-pad :color ,modeline-bg)))
    (mode-line-inactive
     :background modeline-bg-inactive :foreground modeline-fg-alt
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
+    :box (if modeline-pad `(:line-width ,modeline-pad :color ,modeline-bg-inactive)))
    (mode-line-emphasis
     :foreground highlight)
 
    (solaire-mode-line-face
     :inherit 'mode-line
     :background modeline-bg-l
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-l)))
+    :box (if modeline-pad `(:line-width ,modeline-pad :color ,modeline-bg-l)))
    (solaire-mode-line-inactive-face
     :inherit 'mode-line-inactive
     :background modeline-bg-inactive-l
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-l)))
+    :box (if modeline-pad `(:line-width ,modeline-pad :color ,modeline-bg-inactive-l)))
 
    ;; Doom modeline
    (doom-modeline-bar :background highlight)
