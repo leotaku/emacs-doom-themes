@@ -126,7 +126,10 @@
 
    ;; org-mode
    (org-hide :foreground bg)
-   (solaire-org-hide-face :foreground bg))
+   (solaire-org-hide-face :foreground bg)
+
+   ;; ansi-term
+   (ansi-color-bright-black :foreground fg-alt :background bg-alt))
 
   ;; --- extra variables ---------------------
   ())
