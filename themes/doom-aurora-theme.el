@@ -25,7 +25,7 @@
    (base6      '("#73797e" nil nil ))
    (base7      '("#9ca0a4" nil nil ))
    (base8      '("#DFDFDF" nil nil ))
-   (fg         '("#d6d6d6" nil nil ))
+   (fg         '("#e7e7e7" nil nil ))
    (fg-alt     '("#5B6268" nil nil ))
 
    (grey       base4)
