@@ -105,7 +105,7 @@
     :background modeline-bg-inactive-l
     :box (if modeline-pad `(:line-width ,modeline-pad :color ,modeline-bg-inactive-l)))
 
-   ;; Doom modeline
+   ;; doom-modeline
    (doom-modeline-bar :background highlight)
    (doom-modeline-buffer-file :inherit 'mode-line-buffer-id :weight 'bold)
    (doom-modeline-buffer-path :inherit 'mode-line-emphasis :weight 'bold)
@@ -116,8 +116,8 @@
 
    ;; css-mode / scss-mode
    (css-proprietary-property :foreground orange)
-   (css-property             :foreground green)
-   (css-selector             :foreground blue)
+   (css-property :foreground green)
+   (css-selector :foreground blue)
 
    ;; markdown-mode
    (markdown-markup-face :foreground base5)
